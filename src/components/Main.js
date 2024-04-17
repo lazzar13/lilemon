@@ -1,6 +1,10 @@
+import Hero from "./Hero";
+
 function Main() {
     return (
-      <header>Main</header>
+      <main>
+        <Hero></Hero>
+      </main>
     );
   }
   export default Main;
