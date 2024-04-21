@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+.markazi-text {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 body{
   --primary-color1:#495E57;
   --primary-color2:#F4CE14;
@@ -8,14 +13,16 @@ body{
   --secondary-color2:#FBDABB;
   --highlight-color1:#EDEFEE;
   --highlight-color2:#333333;
-  color:var(--highlight-color1)
+  color:var(--highlight-color1);
+  font-family: "Karla", sans-serif;
+  font-style: normal;
 }
 .NavBar{
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--primary-color1);
-  padding: 0px 20px;
+  padding: 0px;
   margin:0 300px;
   text-transform: uppercase;
 }
@@ -35,7 +42,7 @@ body{
 }
 .NavBar li {
   height:inherit;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   display: flex;
   padding:0px 20px;
   align-items: center;
@@ -107,13 +114,25 @@ body{
 h1{
   color:var(--primary-color2);
   font-size:3.5rem;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:lighter;
 }
 h2 {
   font-size: 2.5rem;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:lighter;
 }
 h3{
   font-size: 2rem;
-  color:var(--primary-color1)
+  color:var(--primary-color1);
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:lighter;
 }
 .HeroDivs h1 {
   margin-bottom: -40px;
@@ -208,4 +227,97 @@ h3{
 .FoodCardBody p{
   color:var(--primary-color1);
   margin:0px;
+}
+.FooterDiv{
+  background-color: var(--primary-color1);
+}
+.Footer{
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  margin-left:300px;
+  margin-right: 300px;
+}
+.FooterComponents{
+  
+}
+.FooterComponents ul li a{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+.FooterComponents ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+.Footer img{
+  height:15rem;
+}
+.FooterComponents li a:hover{
+  color:var(--primary-color2);
+  transition: 0.5s;
+}
+.ItalicContacts{
+  font-style: italic;
+}
+.BookingForm{
+  color: var(--highlight-color2);
+  display: grid;
+  grid-template-rows: 7rem 1fr;
+  
+}
+.BookingHeading{
+  background-color: var(--primary-color1);
+  width: 100%;
+  color: var(--highlight-color1);
+  text-align: center;
+  padding: 1px 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 28.125rem;
+  padding: 3rem 2rem;
+}
+.BookingFormDiv{
+  display: flex;
+  justify-content: center;
+}
+.FormDiv{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+label {
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  float:inline-end;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  padding: 10px 20px;
+  color:var(--primary-color1);
+  background-color: var(--primary-color2);
+  border-radius: 20px;
+  border:none;
+  transition: background-color 0.3s, color 0.3s;
+  width: fit-content;
+}
+input[type="submit"]:hover {
+  background-color: var(--primary-color1);
+  color: var(--highlight-color1);
 }

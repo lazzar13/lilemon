@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../src/icons_assets/Logo.svg';
+import BookingPage from './BookingPage';
 
 function Nav() {
   const location = useLocation();
@@ -12,7 +13,7 @@ function Nav() {
         <NavItem to="/" currentLocation={location}>Home</NavItem>
         <NavItem to="/about" currentLocation={location}>About</NavItem>
         <NavItem to="/menu" currentLocation={location}>Menu</NavItem>
-        <NavItem to="/reservations" currentLocation={location}>Reservations</NavItem>
+        <NavItem to="/booking" currentLocation={BookingPage}>Reservations</NavItem>
         <NavItem to="/order" currentLocation={location}>Order Online</NavItem>
         <NavItem to="/login" currentLocation={location}>Login</NavItem>
       </ul>

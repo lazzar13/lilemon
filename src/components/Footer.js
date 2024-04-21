@@ -1,9 +1,11 @@
-import logo from '../src/icons_assets/Logo.svg'
+import logo from '../src/icons_assets/logo-white.png'
+
 function Footer() {
     return (
-      <footer style={{display:'flex'}}>
+    <div className='FooterDiv'>
+      <footer className='Footer'>
         <div><img src={logo}></img></div>
-        <div>Navigation
+        <div className='FooterComponents'>Navigation
             <ul>
                 <li><a href='./'>Home</a></li>
                 <li><a href='./about'>About</a></li>
@@ -13,20 +15,20 @@ function Footer() {
                 <li><a href='./login'>Login</a></li>
             </ul>
         </div>
-        <div>Contacts
-            <ul>
-                <li><a href='./'>Address</a></li>
-                <li><a href='./about'>Phone number</a></li>
-                <li><a href='./menu'>Email</a></li>
+        <div className='FooterComponents'>Contacts
+            <ul className='ItalicContacts'>
+                <li>678 Pisa Ave, Chicago, IL 60611</li>
+                <li>(312) 593-2744</li>
+                <li>customer@littlelemon.com</li>
             </ul>
         </div>
-        <div>Social media
+        <div className='FooterComponents'>Social media
             <ul>
                 <li><a href='./'>Instagram</a></li>
                 <li><a href='./about'>Facebook</a></li>
                 <li><a href='./menu'>Twitter</a></li>
             </ul></div>
-      </footer>
+      </footer></div>
     );
   }
   export default Footer;
